@@ -7,5 +7,157 @@
     <link rel="stylesheet" href="./resources/css/style.css" />
     <title>Sign Up!</title>
   </head>
-  <body></body>
+  <body>
+    <header class="main">
+      <div class="main__banner">
+        <img src="./resources/images/logo.png" alt="A hoop bascket ball" />
+        <div>
+          <h1 id="title">Want to play Basketball?</h1>
+          <p id="description">
+            We're holding tryouts for the school team. Sign up to take part.
+          </p>
+        </div>
+
+        <a class="btn" href="#firstName">Sign Up!</a>
+      </div>
+    </header>
+    <form action="">
+      <section id="firstName" class="main">
+        <div class="container">
+          <label id="name-label" for="first-name">
+            <span> What is your First Name?*</span>
+            <input
+              id="first-name"
+              type="text"
+              placeholder="Type Your Name"
+              name="first-name"
+              required
+            />
+          </label>
+          <a class="btn" href="#emailName"> Next</a>
+        </div>
+      </section>
+      <section id="emailName" class="main">
+        <div class="container">
+          <label id="email-label" for="email">
+            <span> What is your Email?*</span>
+            <input
+              id="email"
+              type="email"
+              placeholder="name@example.com"
+              name="email"
+              required
+            />
+          </label>
+          <a class="btn" href="#age"> Next</a>
+        </div>
+      </section>
+      <section id="age" class="main">
+        <div class="container">
+          <label id="number-label" for="agenum">
+            <span> What is your Age?*</span>
+            <input
+              id="agenum"
+              type="number"
+              placeholder="Choose your Age"
+              name="agenum"
+              min="1"
+              max="100"
+              required
+            />
+          </label>
+          <a class="btn" href="#currentRole"> Next</a>
+        </div>
+      </section>
+      <section id="currentRole" class="main">
+        <div class="container">
+          <label id="currentRole-label" for="dropdown">
+            <span> Which position(s) are you trying out for?*</span>
+            <select id="dropdown" name="roles">
+              <option value="point">
+                <span class="option">Point Guard</span>
+              </option>
+              <option value="center">Center</option>
+              <option value="small">Small Forward</option>
+              <option value="power">Power Forward</option>
+              <option value="shooting">Shooting Guard</option>
+            </select>
+          </label>
+          <a class="btn" href="#age"> Next</a>
+        </div>
+      </section>
+      <section id="recommendation" class="main">
+        <h1>Which Teams you like?</h1>
+        <div class="teams-grid">
+          <label for="laker" class="card">
+            <span>Lakers</span>
+            <img
+              src="./resources/images/basketball-ball.png"
+              width="50px"
+              alt=""
+            />
+            <input id="laker" type="checkbox" name="teams" value="lakers" />
+          </label>
+          <label for="bulls" class="card">
+            <span>Chicago Bulls</span>
+            <img
+              src="./resources/images/basketball-ball.png"
+              width="50px"
+              alt=""
+            />
+            <input id="bulls" type="checkbox" name="teams" value="bulls" />
+          </label>
+          <label for="heats" class="card">
+            <span>Miami Heats</span>
+            <img
+              src="./resources/images/basketball-ball.png"
+              width="50px"
+              alt=""
+            />
+            <input id="heats" type="checkbox" name="teams" value="heats" />
+          </label>
+          <label for="colo" class="card">
+            <span>Colorado</span>
+            <img
+              src="./resources/images/basketball-ball.png"
+              width="50px"
+              alt=""
+            />
+            <input id="colo" type="checkbox" name="teams" value="colo" />
+          </label>
+          <label for="celtic" class="card">
+            <span>Celtic</span>
+            <img
+              src="./resources/images/basketball-ball.png"
+              width="50px"
+              alt=""
+            />
+            <input id="celtic" type="checkbox" name="teams" value="celtic" />
+          </label>
+        </div>
+      </section>
+      <section id="faveFeature" class="main">
+        <h2>Choose How many Goals you scored?</h2>
+        <div>
+          <fieldset>
+            <label for="twenty">
+              10-20
+              <input id="twenty" type="radio" name="goals" value="20" />
+            </label>
+            <label for="fourty">
+              21-40
+              <input id="fourty" type="radio" name="goals" value="40" />
+            </label>
+            <label for="fifty">
+              41-60
+              <input id="fifty" type="radio" name="goals" value="50" />
+            </label>
+          </fieldset>
+        </div>
+      </section>
+      <section id="position" class="main"></section>
+      <section id="moreInfo" class="main"></section>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
 </html>
