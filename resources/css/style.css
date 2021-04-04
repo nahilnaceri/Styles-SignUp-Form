@@ -142,3 +142,20 @@ label.card {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+#faveFeature {
+  padding-top: 50px;
+  text-align: center;
+}
+fieldset {
+  border: none;
+}
+.center {
+  width: 90%;
+  margin: 0 auto;
+}
+#feedback {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 90%;
+  height: 500px;
+}

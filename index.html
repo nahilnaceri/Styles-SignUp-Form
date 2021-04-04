@@ -141,23 +141,32 @@
         <div>
           <fieldset>
             <label for="twenty">
-              10-20
+              <span>10-20</span>
               <input id="twenty" type="radio" name="goals" value="20" />
             </label>
             <label for="fourty">
-              21-40
+              <span>30-40</span>
               <input id="fourty" type="radio" name="goals" value="40" />
             </label>
             <label for="fifty">
-              41-60
+              <span>40-50</span>
               <input id="fifty" type="radio" name="goals" value="50" />
             </label>
           </fieldset>
         </div>
       </section>
-      <section id="position" class="main"></section>
-      <section id="moreInfo" class="main"></section>
-      <input type="submit" value="submit" />
+      <section id="position" class="main">
+        <div class="center">
+          <h2>Give us more feedback</h2>
+          <textarea
+            name="feedback"
+            id="feedback"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <input id="submit" type="submit" class="btn" />
+        </div>
+      </section>
     </form>
   </body>
 </html>
